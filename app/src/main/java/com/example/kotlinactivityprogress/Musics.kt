@@ -8,19 +8,33 @@ import android.widget.ImageView
 import android.widget.TextView
 
 class Musics : AppCompatActivity() {
+    lateinit var img5:ImageView
+    lateinit var img7:ImageView
+    lateinit var tv4:TextView
+    lateinit var btnBack:Button
+    lateinit var btnContinue:Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_musics)
-        var img5=findViewById<ImageView>(R.id.img5)
-        var img7=findViewById<ImageView>(R.id.img7)
-        var tv4=findViewById<TextView>(R.id.tv4)
-        var btn1=findViewById<Button>(R.id.btn5)
-        var btn2=findViewById<Button>(R.id.btn6)
-        btn1.setOnClickListener {
-            var intent= Intent(baseContext,MyGoal::class.java)
+        castViews()
+        btnBack()
+        btnContinue()
+    }
+    fun castViews() {
+         img5 = findViewById(R.id.img5)
+         img7 = findViewById(R.id.img7)
+         tv4 = findViewById(R.id.tv4)
+         btnBack = findViewById(R.id.btn5)
+         btnContinue = findViewById(R.id.btn6)
+    }
+    fun btnBack() {
+        btnBack.setOnClickListener {
+            var intent = Intent(baseContext, MyGoal::class.java)
             startActivity(intent)
         }
-        btn2.setOnClickListener {
+    }
+    fun btnContinue(){
+        btnContinue.setOnClickListener {
             var intent=Intent(baseContext,God::class.java)
             startActivity(intent)
         }

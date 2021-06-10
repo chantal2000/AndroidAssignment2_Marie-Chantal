@@ -8,20 +8,35 @@ import android.widget.ImageView
 import android.widget.TextView
 
 class Family : AppCompatActivity() {
+    lateinit var img:ImageView
+    lateinit var tv:TextView
+    lateinit var btnBack:Button
+    lateinit var btnContinue:Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_family)
-        var img=findViewById<ImageView>(R.id.imgFam)
-        var tv=findViewById<TextView>(R.id.tvFam)
-        var btn1=findViewById<Button>(R.id.pre)
-        var btn2=findViewById<Button>(R.id.main)
-        btn1.setOnClickListener {
-            var intent=Intent(baseContext,God::class.java)
-            startActivity(intent)
+        castViews()
+        btnBack()
+        btnContinue()
+    }
+        fun castViews() {
+            img = findViewById(R.id.imgFam)
+            tv = findViewById(R.id.tvFam)
+            btnBack = findViewById(R.id.pre)
+            btnContinue = findViewById(R.id.main)
         }
-        btn2.setOnClickListener {
-            var intent=Intent(baseContext,MainActivity::class.java)
-            startActivity(intent)
+
+        fun btnBack() {
+            btnBack.setOnClickListener {
+                var intent = Intent(baseContext, God::class.java)
+                startActivity(intent)
+            }
+        }
+
+        fun btnContinue() {
+            btnContinue.setOnClickListener {
+                var intent = Intent(baseContext, MainActivity::class.java)
+                startActivity(intent)
+            }
         }
     }
-}

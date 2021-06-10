@@ -6,13 +6,20 @@ import android.os.Bundle
 import android.widget.Button
 
 class MainActivity : AppCompatActivity() {
+    lateinit var btnCon: Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        var btn1=findViewById<Button>(R.id.btn1)
-        btn1.setOnClickListener {
-            var intent= Intent(baseContext,MyGoal::class.java)
-            startActivity(intent)
+        castViews()
+        btnCon()
+    }
+        fun castViews() {
+            btnCon = findViewById(R.id.btn1)
+        }
+        fun btnCon() {
+            btnCon.setOnClickListener {
+                var intent = Intent(baseContext, MyGoal::class.java)
+                startActivity(intent)
+            }
         }
     }
-}

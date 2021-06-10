@@ -17,31 +17,34 @@
 
     <TextView
         android:id="@+id/tvFam"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="387dp"
+        android:layout_height="203dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="12dp"
         android:text="I really like a any family that has love,peace ,...generally .I like it when i'm with my family "
+        android:textSize="34sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imgFam" />
 
     <Button
         android:id="@+id/pre"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="48dp"
-        android:layout_marginTop="120dp"
+        android:layout_width="169dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="56dp"
         android:text="Previous"
+        android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvFam" />
 
     <Button
         android:id="@+id/main"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="208dp"
-        android:layout_marginTop="120dp"
+        android:layout_width="198dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="192dp"
+        android:layout_marginTop="56dp"
         android:text="Go To Main"
+        android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvFam" />
 </androidx.constraintlayout.widget.ConstraintLayout>

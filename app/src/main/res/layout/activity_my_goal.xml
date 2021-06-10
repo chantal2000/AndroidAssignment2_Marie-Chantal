@@ -8,8 +8,8 @@
 
     <ImageButton
         android:id="@+id/btn00"
-        android:layout_width="0dp"
-        android:layout_height="357dp"
+        android:layout_width="410dp"
+        android:layout_height="369dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -25,11 +25,12 @@
 
     <TextView
         android:id="@+id/tv2"
-        android:layout_width="410dp"
-        android:layout_height="68dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="64dp"
+        android:layout_width="384dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="36dp"
         android:text="My Passion is being the best coder. I Like all programming Language despiteof what it is.I enjoy them.As i have said I want to be a full Stack developer Who is good at Frontend,backend ,mobile,."
+        android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline3" />
 
@@ -37,9 +38,10 @@
         android:id="@+id/btn4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="236dp"
-        android:layout_marginTop="92dp"
+        android:layout_marginStart="216dp"
+        android:layout_marginTop="52dp"
         android:text="Continue"
+        android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv2" />
 
@@ -47,9 +49,10 @@
         android:id="@+id/btnbtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="64dp"
-        android:layout_marginTop="92dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="52dp"
         android:text="Go Back"
+        android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv2" />
 </androidx.constraintlayout.widget.ConstraintLayout>
